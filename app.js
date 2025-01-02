@@ -521,14 +521,149 @@
 
 //q3
 
-let str = "ApnaCollege";
+// let str = "ApnaCollege";
 
-let newStr = str.slice(str.indexOf("College")).replace("l","t").replace("l","t");
-console.log(newStr);
+// let newStr = str.slice(str.indexOf("College")).replace("l","t").replace("l","t");
+// console.log(newStr);
+
+//Array DS
+
+// let students = ["Divyansh","Rahul","Rohit","Rajat"];
+// console.log(students);
+
+// console.log(typeof students);
+
+//mixed array
+let arr = ["Divyansh",20,true,5.5];
+// console.log(arr);
+// console.log(arr.length);
+
+// let newArr = [];
+// console.log(newArr);
+// console.log(newArr.length);
+
+// console.log([0,1].length);
+
+//Accessing elements of an array
+
+// console.log(arr[0][0]);
+// console.log(arr[0].length);
+
+//Arrays are mutable
+
+// let fruits = ["Apple","Banana","Mango"];
+// fruits[0] = "Pineapple";
+// console.log(fruits);
+// fruits[10] = "Orange"; // it will create empty slots in the array
+// console.log(fruits);
+// console.log(fruits[5]);
+
+//Array Methods
+
+//1. push method : it adds the element at the end of the array
+// let cars = ["BMW","Audi","Mercedes","Toyota"];
+// console.log(cars.push("Ford")); // adds the element at the end of the array
+// console.log(cars);
+
+//2. pop method : it removes the last element of the array
+// console.log(cars.pop()); // removes the last element of the array
+// console.log(cars);
+
+//3. unshift method : it adds the element at the start of the array
+// console.log(cars.unshift("Ford")); // adds the first element of the array
+// console.log(cars);
+
+//4. shift method : it removes the first element of the array
+// console.log(cars.shift()); // removes the first element of the array
+// console.log(cars);
+
+// //example
+
+// let followers = ["Divyansh","Rahul","Rohit","Rajat"];
+
+// let blocked = followers.shift();
+
+// console.log(followers);
+// console.log(blocked);    
+
+//question
+
+// let months = ["january","july","march","august"];
+// months.shift();
+// months.shift();
+// months.unshift("june");
+// months.unshift("july");
+// console.log(months);
+
+//5.indexOf method : it returns the index of the element
+
+// let colors = ["red","blue","green"];
+// console.log(colors.indexOf("blue")); // returns the index of the element
+// console.log(colors.indexOf("yellow")); // returns -1 if the element is not present in the array
+// console.log(colors.indexOf("Green"));
 
 
+// //6. includes method : it returns true or false
+// console.log(colors.includes("blue")); // returns true if the element is present in the array
+// console.log(colors.includes("yellow")); // returns false if the element is not present in the array
 
+// //7. concat method : it returns the new array
+// let arr1 = [1,2,3];
+// let arr2 = [4,5,6];
+// let arr3 = arr1.concat(arr2);
+// console.log(arr3);
+// console.log(arr1);// no change in the original array
 
+// //8. reverse method : it og reverses the array
+// console.log(arr3.reverse());
+// console.log(arr3); // original array is also reversed
+
+// 9. slice method : it returns the copy of the array
+
+// let cars = ["BMW","Audi","Mercedes","Toyota"];
+
+// console.log(cars.slice()); // it will return the copy of the array
+// console.log(cars.slice(1)); // it will return the array from the given index to the end of the array  
+// console.log(cars.slice(1,3)); // it will return the array from the given start index to the end index-1
+// console.log(cars.slice(cars.length-1)); // it will return the last element of the array
+// console.log(cars.slice(5));  // it will return an empty array
+// console.log(cars.slice(-2)); // it will return the last two elements of the array
+// console.log(cars.slice(-5)); 
+
+//10. splice method : makes changes in the original array
+
+// let colors = ["red","yellow","blue","orange","pink","white"];
+
+// console.log(colors.splice(4)); // it will remove the elements from the given index to the end of the array
+// console.log(colors);
+// console.log(colors.splice(1,2)); // it will remove the elements from the given start to count of elements
+// console.log(colors);
+// colors.push("blue");
+// colors.push("pink");
+// console.log(colors);
+// colors.splice((1,2));
+// console.log(colors);
+// colors.splice(0,0,"green","purple");
+// console.log(colors);
+// colors.splice(1,0,"black"); // adds the element at the given index
+// console.log(colors);
+// colors.splice(1,1,"blue"); // replaces the element at the given index
+// console.log(colors);
+
+//10. sort method : it sorts the array
+
+// let cars = ["BMW","Audi","Mercedes","Toyota"];
+// console.log(cars.sort());
+ 
+// let chars = ['q','a','m','b'];
+// console.log(chars.sort());
+
+// //But it doesn't work for numbers as it converts the numbers into strings and then sorts them 
+
+// let nums = [10,5,20,15];
+// console.log(nums.sort());
+
+//Questions
 
 
 
