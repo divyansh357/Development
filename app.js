@@ -1,3 +1,5 @@
+//Js-2
+
 // console.log("Hello World!");
 // console.log("Divyansh Here!");
 // let a =10;
@@ -444,6 +446,8 @@
 //     console.log("Numbers don't have the same last digit.");
 // }
 
+
+//Js-3
 //String Methods
 
 //1.trim method
@@ -534,7 +538,7 @@
 // console.log(typeof students);
 
 //mixed array
-let arr = ["Divyansh",20,true,5.5];
+//let arr = ["Divyansh",20,true,5.5];
 // console.log(arr);
 // console.log(arr.length);
 
@@ -665,20 +669,115 @@ let arr = ["Divyansh",20,true,5.5];
 
 //Questions
 
+//q1 
 
+// let months = ["january","july","march","august"];
+// months.splice(0,2,"july","june");
+// console.log(months);
 
+//q2
 
+// let tech = ['c',"c++","html","javascript","python","java","c#","sql"];
+// console.log(tech.reverse().indexOf("javascript"));
 
+//Array References: arrays are compared by reference not by value
 
+//This condition will always return 'false' since JavaScript compares objects by reference, not value
+// console.log([1]===[1]); // false
+// console.log([]===[]);  // false
 
+// let arr = ['a','b'];
+// let arrCopy = arr; // it will copy the reference of the array
+// console.log(arrCopy);
+// arrCopy.push('c');
+// console.log(arr);
+// console.log(arrCopy);
 
+// console.log(arr===arrCopy); // true
 
+// let arr1 = ['a','b','c'];
+// console.log(arr1===arr); // both are different as references are different although the elements are same
+// arr1.pop();
+// console.log(arr);
 
+// Constant Arrays
 
+// const arr = [1,2,3];
+// arr.push(4);
+// console.log(arr);
+// arr.pop();
+// console.log(arr);
 
+// arr = [4,5,6]; // it will give an error : Assignment to constant variable
 
+// Nested Arrays
 
+// let arr = [[1,2],[3,4],[5,6]];
+// console.log(arr);
+// console.log(arr[0]);
+// console.log(arr[0].length);
+// console.log(arr.length);
+// console.log(arr[1][1]);
 
+//Questions
 
+// let game = [['X',null,'O'],[null,'X',null],['O',null,'X']];
+// console.log(game);
+// game[0][1] = 'O';
 
+//Sheet
 
+//q1
+
+// let arr = [7,9,0,-2];
+// let n = prompt("Enter the number:");
+// console.log(arr.slice(0,n));
+
+//q2
+
+// let arr = [7,9,0,-2];
+// let n = prompt("Enter the number:");
+// console.log(arr.slice(-n));
+
+//q3
+
+// let str = " "; 
+// if(str.length==0)
+// {
+//     console.log("Empty");
+// }
+// else
+// {
+//     console.log("Not Empty");
+// }
+
+//q4
+
+// let str = "ApNaCoLlEgE";
+// let idx = 3;
+// if(str[idx]==str[idx].toLowerCase())
+// {
+//     console.log("Character is lowercase");
+// }
+// else
+// {
+//     console.log("Character is uppercase");
+// }
+
+//q5
+
+// let str = prompt("Enter a string:");
+// let newStr = str.trim();
+// console.log(newStr);
+
+//q6
+// let arr = ["hello",'a',23,64,99,-6];
+// let item = 64;
+// if(arr.includes(item))
+// {
+//     console.log("Element present in the array.");
+// }
+// else
+// {
+//     console.log("Element not present in the array.");
+// }
