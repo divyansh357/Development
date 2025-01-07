@@ -1168,30 +1168,149 @@
 // delete student.gender;
 // console.log(student);
 
-// Nested Objects : Object of objects
+//Nested Objects : Object of objects
 
-const classInfo = {
-    divyansh :{
-        grade : "A+",
-        city : "Mumbai"
-    },
-    harshit:{
-        grade: "A+",
-        city : "Mumbai"
-    },
-    jayesh:{
-        garde : "A+",
-        city : "Mumbai"
+// const classInfo = {
+//     divyansh :{
+//         grade : "A+",
+//         city : "Mumbai"
+//     },
+//     harshit:{
+//         grade: "A+",
+//         city : "Mumbai"
+//     },
+//     jayesh:{
+//         garde : "A+",
+//         city : "Mumbai"
+//     }
+// };
+
+// console.log(classInfo);
+// console.log(classInfo.divyansh);
+// console.log(classInfo.harshit.grade);
+// classInfo.divyansh.city = "Texas";
+// classInfo.harshit.city = "Texas";
+// classInfo.jayesh.city = "Texas";
+// console.log(classInfo);
+
+// Array of objects 
+
+// const classInfo = [
+//     {
+//         name : "Divyansh",
+//         grade : "A+",
+//         city : "Indore"
+//     },
+//     {
+//         name : "Harshit",
+//         grade : "A+",
+//         city : "Indore"
+//     },
+//     {
+//         name : "Jayesh",
+//         grade : "A+",
+//         city : "Indore"
+//     }     
+// ];
+// console.log(classInfo);
+// console.log(classInfo[0].name);
+// console.log(classInfo[1].city);
+// classInfo[1].gender = "female";
+// classInfo[2].gender = "male";
+// classInfo[0].gender = "male";
+// console.log(classInfo[1]);
+// console.log(classInfo);
+
+// Math Objects 
+
+// Math properties
+// console.log(Math.PI);
+// console.log(Math.E);
+
+// Math Functions
+
+// absolute(abs) fxn
+// console.log(Math.abs(-12)); // Returns absolute value
+// console.log(Math.abs(12.3));
+
+//pow fxn
+// console.log(Math.pow(2,4));
+// console.log(Math.pow(2,5));
+
+//Floor fxn
+// console.log(Math.floor(5.9));
+// console.log(Math.floor(-5.5));
+
+//Ceil fxn
+
+// console.log(Math.ceil(5.5));
+// console.log(Math.ceil(5.0225));
+// console.log(Math.ceil(-5.5));
+
+// Random fxn
+//console.log(Math.random());// any random value from 0 to 1(exclusive)
+
+// Random Integers
+
+// From 1 to 10
+// let num = Math.random();
+// num = num*10;
+// num = Math.floor(num);
+// num+=1;
+// console.log(num);
+
+// In one line
+// let num = Math.floor(Math.random()*10)+1;
+// console.log(num);
+
+// //q1
+// let num = Math.floor(Math.random()*100)+1;
+// console.log(num);
+
+// //q2
+// let num1 = Math.floor(Math.random()*5)+1;
+// console.log(num1);
+
+// from 21 to 25
+// let num = Math.floor(Math.random()*5)+21;
+// console.log(num);
+
+// Guessing Game 
+const max = prompt("Enter the maximum number:");
+const random = Math.floor(Math.random()*max)+1;
+let guess = prompt("Guess the number:");
+while(true)
+{
+    if(guess=="quit")
+    {
+        console.log("User Quit.");
+        break;
     }
-};
+    if(guess==)
+}
 
-console.log(classInfo);
-console.log(classInfo.divyansh);
-console.log(classInfo.harshit.grade);
-classInfo.divyansh.city = "Texas";
-classInfo.harshit.city = "Texas";
-classInfo.jayesh.city = "Texas";
-console.log(classInfo);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
