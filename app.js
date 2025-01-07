@@ -980,12 +980,256 @@
 
 // Nested for of loop
 
-let heroes = [["ironman","spiderman","thor"],["superman","wonder woman","flash"]];
-for(list of heroes)
-{
-    console.log(list);
-    for(hero of list)
-    {
-        console.log(hero);
+// let heroes = [["ironman","spiderman","thor"],["superman","wonder woman","flash"]];
+// for(list of heroes)
+// {
+//     console.log(list);
+//     for(hero of list)
+//     {
+//         console.log(hero);
+//     }
+// }
+
+// To-do App
+
+// const toDos = [];
+// let choice=prompt("What would you like to do:");
+// while(true)
+// {
+//     if(choice=="quit")
+//     {
+//         console.log("You quit the app.");
+//         break;
+//     }    
+//     else if(choice=="list")
+//     {
+//         console.log(`Your current to-do list:`);
+//         for(let i=0;i<toDos.length;i++)
+//         {
+//         console.log(i,toDos[i]);
+//         }    
+//         console.log("-----------------");
+//     }    
+//     else if(choice=="add")
+//     {
+//         let newToDo = prompt("Enter the new to-do:");
+//         toDos.push(newToDo);
+//         console.log("Task added");
+//         console.log(`Your current to-do list:${toDos}`);
+//     }
+//     else if(choice=="delete")
+//     {
+//         let idx = prompt("Please enter the task index:");
+//         toDos.splice(idx,1);
+//         console.log(`Your current to-do list:${toDos}`);
+//     }
+//     else
+//     {
+//        console.log("Invalid choice.");
+//     }
+//     choice = prompt("What would you like to do:list,add ,delete or quit the app");
+// }
+
+//Questions
+
+//q1
+
+// let arr = [1,2,3,4,5,6,2,3];
+// let num = 2;
+// for(let i=0;i<arr.length;i++)
+// {
+//     if(arr[i]==num)
+//     {
+//         arr.splice(i,1);
+//     }
+// }
+// console.log("Array after deletion of num:",arr);
+
+//q2
+// let number = 287152;
+// let count =0;
+// let copy = number;
+// while(copy>0)
+// {
+//     count++;
+//     copy = Math.floor(copy/10);
+// }
+// console.log(count);
+
+//q3
+// let num = 287152;
+// let sum =0;
+// let rem = 0;
+// while(num>0)
+// {
+//     rem = num%10;
+//     sum+=rem;
+//     num = Math.floor(num/10);
+// }
+// console.log(sum);
+
+//q4
+// let n = 5;
+// let factorial =1;
+// for(let i=1;i<=n;i++)
+// {
+//     factorial*=i;
+// }
+// console.log(`Factorial: ${factorial}`);
+
+// q5
+// let largest = 0;
+// let arr = [2,5,10,4,2,7,1,9];
+// for(num of arr)
+// {
+//     if(num>largest)
+//     {
+//         largest = num;
+//     }
+// }
+// console.log(largest);
+
+//Object Literals
+
+// const student = {
+//     name: "Divyansh",
+//     age: 20,
+//     marks: 90
+// };
+
+// const item = {
+//     price : 100.99,
+//     discount : 50,
+//     colors : ["red","pink"]
+// };
+
+// Twitter Post
+
+// const post = {
+//     username : "@divyansh123",
+//     content : "I am enjoying my day",
+//     likes : 10000,
+//     reposts : 200000,
+//     tags : ["@harshitgour","@jayeshmalviya"]
+// };
+
+// Get values
+
+// console.log(post["likes"]); // passing key as string
+// console.log(post.likes); // Using the dot operator
+// console.log(post.tags);
+// console.log(post.tags[0]);
+
+// When we have to use variables we use square brackets method
+// let property = "reposts";
+// console.log(post[property]);
+
+// const obj = {
+//     1: "a",
+//     2: "b",
+//     true: "c",
+//     null: "d",
+//     undefined: "e"
+// };
+
+// Convert key as string automatically
+// console.log(obj[1]);
+// console.log(obj[2]);
+// console.log(obj[null]);
+// console.log(obj[true]);
+// console.log(obj[undefined]);
+
+//console.log(obj.1);// Unexpected number
+// console.log(obj.true);
+// console.log(obj.null);
+// console.log(obj.undefined);
+
+// Add/Update value
+
+// const student = {
+//     name : "Divyansh",
+//     age : 20,
+//     marks: 90,
+//     city : "Indore"
+// };
+// console.log(student);
+// student.city = "Mumbai";
+// console.log(student);
+
+// //new key creation 
+// student.gender = "male";
+// console.log(student);
+// student.marks = "A";
+// console.log(student);
+// student.marks = [99,90,92];
+// console.log(student);
+
+// // key Deletion
+// delete student.gender;
+// console.log(student);
+
+// Nested Objects : Object of objects
+
+const classInfo = {
+    divyansh :{
+        grade : "A+",
+        city : "Mumbai"
+    },
+    harshit:{
+        grade: "A+",
+        city : "Mumbai"
+    },
+    jayesh:{
+        garde : "A+",
+        city : "Mumbai"
     }
-}
+};
+
+console.log(classInfo);
+console.log(classInfo.divyansh);
+console.log(classInfo.harshit.grade);
+classInfo.divyansh.city = "Texas";
+classInfo.harshit.city = "Texas";
+classInfo.jayesh.city = "Texas";
+console.log(classInfo);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
