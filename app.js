@@ -1276,18 +1276,129 @@
 // console.log(num);
 
 // Guessing Game 
-const max = prompt("Enter the maximum number:");
-const random = Math.floor(Math.random()*max)+1;
-let guess = prompt("Guess the number:");
-while(true)
+// const max = prompt("Enter the maximum number:");
+// const random = Math.floor(Math.random()*max)+1;
+// let guess = prompt("Guess the number:");
+// while(true)
+// {
+//     if(guess=="quit")
+//     {
+//         console.log("User Quit.");
+//         break;
+//     }
+//     if(guess==random)
+//     {
+//         console.log("Congrats! You guessed it right. Random number was: "+random); 
+//         break;
+//     }
+//     else if(guess<random)
+//     {
+//         guess= prompt("Your guess was too small. Please try again:");
+//     }
+//     else if(guess>random)
+//     {
+//         guess = prompt("Your guess was too large. Please try again:")
+//     }
+//     else
+//     {
+//         guess = prompt("Your guess was wrong. Please try again");
+//     }
+// }
+
+// Questions
+
+//q1
+
+// let dice = Math.floor(Math.random()*6)+1;
+// console.log(dice);
+
+//q2
+
+// let car = 
+// {
+//     name : "BMW",
+//     model : "E-class",
+//     color : "White"
+// };
+// console.log(car.name);
+
+// q3
+
+// const Person = {
+//     name : "Divyansh",
+//     age : 21,
+//     city : "Indore"
+// };
+// Person.city = "New York";
+// Person.country = "United States";
+// console.log(Person);
+
+// Js - 6 
+
+// Functions in js 
+
+// function hello()
+// {
+//     console.log("Hello");
+// }
+// hello();
+// hello();
+
+// function printName()
+// {
+//     console.log("Divyansh Gupta");
+// }
+// printName();
+
+// function print1to5()
+// {
+//     for(let i =0;i<=5;i++)
+//     {
+//         console.log(i);
+//     }
+// }
+// print1to5();
+
+// function isAdult()
+// {
+//     let age = 18;
+//     if(age>=18)
+//     {
+//         console.log("Adult");
+//     }
+//     else
+//     {
+//         console.log("Not adult");
+//     }
+// }
+// isAdult();
+
+// Print poem
+
+// function printPoem()
+// {
+//     console.log("Twinkle twinke little star");
+//     console.log("How I wonder what you are");
+//     console.log("Up above the world so high");
+// }
+// printPoem();
+
+// dice roll
+
+function rollDice()
 {
-    if(guess=="quit")
-    {
-        console.log("User Quit.");
-        break;
-    }
-    if(guess==)
+    let num = Math.floor(Math.random()*6)+1;
+    console.log(num);
 }
+rollDice();
+rollDice();
+
+
+
+
+
+
+
 
 
 
