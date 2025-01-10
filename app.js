@@ -1617,83 +1617,168 @@
 
 // High Order Functions 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// function multipleGreet(func,count)
+// {
+//     for(let i=1;i<=count;i++)
+//     {
+//         func();
+//     }
+// }
+
+// let greet = function()
+// {
+//     console.log("Hello");
+// }
+
+// //multipleGreet(greet,100);
+
+// //Or we can declare it inside also
+
+// multipleGreet(function() {console.log("Namaste")},1000)
+
+// Higher order function which returns a function
+
+// function oddEvenFactory(request) // Factory Function
+// {
+//     if(request=="odd")
+//     {
+//         return function(n)
+//         {
+//             console.log(!(n%2==0));
+//         }
+//     }
+//     else if(request=="even")
+//     {
+//         return function(n)
+//         {
+//             console.log(n%2==0);
+//         }
+//     }
+//     else
+//     {
+//         console.log("Wrong request");
+//     }
+// }
+
+// let request = "even";
+// let func = oddEvenFactory(request);
+// console.log(func(10));
+
+// let request = "odd";
+// let func = oddEvenFactory(request)
+// console.log(func(2));
+
+// Methods 
+
+// const calculator = {
+//     num : 55,
+//     add : function(a,b)
+//     {
+//         return a+b;
+//     },
+//     sub : function(a,b)
+//     {
+//         return a-b;
+//     },
+//     mul : function(a,b)
+//     {
+//         return a*b;
+//     }
+// };
+// console.log(calculator);
+// console.log(calculator.num);
+// console.log(calculator.mul);
+// console.log(calculator.add);
+// console.log(calculator.mul(6,5));
+
+// Shorthand to declare methods inside object
+
+// const calculator = {
+//     add(a,b)
+//     {
+//         return a+b;
+//     },
+//     sub(a,b)
+//     {
+//         return a-b;
+//     }
+// };
+
+// console.log(calculator.add(2,5));
+
+// Practice questions 
+
+//q1
+
+// let arr = [1,10,2,5,60,12,4,8,13,19];
+// let num = 5;
+// function greater(arr,num)
+// {
+//     for(let i=0;i<arr.length;i++)
+//     {
+//         if(arr[i]>num)
+//         {
+//             console.log(arr[i]);
+//         }
+//     }
+// }
+// greater(arr,num);
+
+//q2
+
+// let str = "abcdabcdefgggh";
+// function getUnique(str)
+// {
+//     let extract = "";
+//     for(let i=0;i<str.length;i++)
+//     {
+//         let currChar = str[i];
+//         if(extract.indexOf(currChar)==-1)
+//         {
+//             extract+=currChar;
+//         }
+//     }
+//     return extract;
+// }
+// console.log(getUnique(str));
+
+//q3
+
+// let country = ["Australia","Germany","United States Of America"]
+// function largest(country)
+// {
+//     let ansIdx = 0;
+    
+//     for(let i=1;i<country.length;i++)
+//     {
+//         let ansLen = country[ansIdx].length;
+//         let currLen = country[i].length;
+//         if(currLen>ansLen)
+//         {
+//             ansIdx = i;
+//         }
+//     }
+//     return country[ansIdx];
+// }
+// console.log(largest(country));
+
+//q4
+
+// let str = "Abeighopab";
+// function countVovels(str)
+// {
+//     str = str.toLowerCase();
+//     let count = 0;
+//     for(let i=0;i<str.length;i++)
+//     {
+//         if(str[i]=='a'||str[i]=='e'||str[i]=="i"||str[i]=="o"||str[i]=="u")
+//         {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// console.log(countVovels(str));
+
+//q5
 
