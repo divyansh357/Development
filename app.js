@@ -1385,13 +1385,247 @@
 
 // dice roll
 
-function rollDice()
-{
-    let num = Math.floor(Math.random()*6)+1;
-    console.log(num);
-}
-rollDice();
-rollDice();
+// function rollDice()
+// {
+//     let num = Math.floor(Math.random()*6)+1;
+//     console.log(num);
+// }
+// rollDice();
+// rollDice();
+
+// Function with argument
+
+// function info(name,age)
+// {
+//     console.log(`${name}'s age is ${age}`);
+// }
+// info("Divyansh",21);
+// info("Jayesh",21);
+// info("Harshit");
+// info(40);
+
+// function sum(a,b)
+// {
+//     console.log(a+b);
+// }
+// sum(10,20);
+// sum(9562,95623);
+
+// avg of 3 numbers
+
+// function clcAvg(a,b,c)
+// {
+//     avg = (a+b+c)/3;
+//     console.log(avg);
+// }
+// clcAvg(1,2,3);
+// clcAvg(2,4,6);
+
+// Table 
+
+// function printTable(n)
+// {
+//     for(let i = n; i<=n*10; i+=n)
+//     {
+//        console.log(i); 
+//     }
+// }
+// printTable(5);
+// printTable(7);
+// printTable(73);
+
+// Return keyword
+
+// arr = [2,3,4,8,9];
+// let part = arr.slice(2,4);
+// console.log(part);
+
+// function sum(a,b)
+// {
+//     return a+b;
+// }
+// let s = sum(3,4);
+// console.log(s);
+
+// console.log(sum(10,12));
+
+// finding sum of 3 numbers
+//console.log(sum(sum(2,3),8));
+
+// function isAdult(age)
+// {
+//     if(age>=18)
+//     {
+//         return "adult";
+//     }
+//     else
+//     {
+//         return "not adult";
+//     }
+// }
+
+// console.log(isAdult(20));
+
+// q5
+
+// function getSum(n)
+// {
+//     let sum =0;
+//     for(let i=0;i<=n;i++)
+//     {
+//         sum+=i;
+//     }
+//     return sum;
+// }
+
+// console.log(`Sum: ${getSum(1000)}`);
+
+// q6
+
+// function concatenate(arr)
+// {
+//     let length = arr.length;
+//     let result = "";
+//     for(let i=0;i<arr.length;i++)
+//     {
+//         result+=arr[i];
+//     }
+//     return result;
+// }
+
+// let arr = ["Hi ","hello ","bye ","!"];
+// console.log(concatenate(arr));
+
+// Scope
+
+
+
+// let sum = 54; // Global Scope
+
+// // Function Scope
+// function calSum(a,b)
+// {
+//     let sum = a+b; // Function Scope
+//     return sum;
+
+//     //Function scope ends here
+// }
+// console.log(calSum(4,5)); 
+// console.log(sum);
+
+
+// Block Scope
+
+// {
+//     // const a= 25;
+//     // let b = 10;
+//     var c = 20;
+
+// }
+
+// console.log(a);
+// console.log(b);
+//console.log(c); // It works as block scope do not effect var keyword but using it is a bad practice
+
+
+// for(let i=0;i<=5;i++)
+// {
+//     console.log(i);
+// }
+
+// console.log(i);
+
+// let age = 25;
+// if(age>=18)
+// {
+//     let str = "Adult";
+// }
+// console.log(str);
+
+// Lexical Scope
+
+// function outerFunc()
+// {
+//     let x = 5;
+//     let y = 6;
+//     function innerFunc()
+//     {
+//         console.log(x);
+//         console.log(y);
+//     }
+//     innerFunc();
+// }
+// outerFunc();
+
+// Hoisting : Hoisting is JavaScript's default behavior of moving all declarations 
+// to the top of the current scope (to the top of the current script or the current function).
+
+// By hoisting
+
+// function outerFunc()
+// {
+//     function innerFunc() // Function Scope
+//     {
+//         let a = 10;
+//         console.log(x);
+//         console.log(y);
+//     }
+//     // console.log(a); // lexical scope do not work from inside to outside but it works outside to inside
+//     let x = 5;
+//     let y = 6;
+//     innerFunc();
+// }
+// outerFunc();
+
+// innerFunc(); cannaot be used as it is defined inside outerFunc 
+
+//question
+
+// let greet = "hello"; // Global Scope
+// function changeGreet() // Fxn
+// {
+//     let greet = "namaste"; // fxn scope
+//     console.log("Greet");
+//     function innerGreet() // never called
+//     {
+//         console.log(greet); // lexical scope
+//     }
+// }
+// console.log(greet);
+// changeGreet();
+
+// Function Expressions
+
+// const sum = function(a,b)
+// {
+//     return a+b;
+// }
+// console.log(sum(1,2));
+
+
+// let hello = function()
+// {
+//     console.log("hello");
+// }
+// hello();
+
+// hello = function()
+// {
+//     console.log("Namaste");
+// }
+// hello();
+
+// High Order Functions 
+
+
+
+
+
+
+
+
+
+
 
 
 
