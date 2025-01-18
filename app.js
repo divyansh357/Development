@@ -1782,3 +1782,174 @@
 
 //q5
 
+// function random(start,end)
+// {
+//     let randomNum = Math.floor(Math.random()*(end-start+1))+start;
+//     return randomNum;
+// }
+// console.log(random(2,10));
+
+//Js- 7
+
+//This keyword
+
+// const student = {
+//     name : "Divyansh",
+//     age : 21,
+//     eng : 95,
+//     math : 90,
+//     phy : 92,
+//     getAvg()
+//     {
+//         console.log(this);
+        
+//         let avg = (this.eng + this.math+this.phy)/3;
+//         console.log(`${this.name} got avg marks = ${avg}`);
+        
+//     }
+// }
+// console.log(student.getAvg());
+
+// function explain()
+// {
+//     console.log(this); // prints window object
+// }
+// explain();
+
+// window.alert("Hello");
+
+// Try and Catch block
+
+// console.log("Hello");
+// console.log("Hello");
+// console.log("Hello");
+// console.log("Hello");
+// try{
+//     console.log(a);
+// }catch(e){
+//     console.log("Caught an error... a is not defined.");
+//     console.log(e); 
+// }
+// console.log("hello2");
+
+
+// Arrow Functions
+
+// const sum = (a,b)=>{
+//     console.log(a+b);
+// };
+
+// sum(2,3);
+
+// const cube = (n)=>{
+//     console.log(n*n*n);
+// };
+// cube(5);
+
+//Power Function
+// const pow = (a,b) =>{
+//     return a**b;
+// }
+
+// console.log(pow(2,3));
+
+// When only single argument passes parenthesis can be ignored
+
+// const cube = n => {
+//     return n*n*n;
+// }
+// console.log(cube(5));
+
+// Implicit return in arrow function
+
+// const mul = (a,b) => (a*b);
+// console.log(mul(4,5));
+
+// Set Timeout function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
