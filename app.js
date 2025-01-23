@@ -1499,7 +1499,6 @@
 // Scope
 
 
-
 // let sum = 54; // Global Scope
 
 // // Function Scope
@@ -1867,89 +1866,117 @@
 
 // Set Timeout function
 
+// console.log("Hi there");
+
+// setTimeout(()=>{
+//     console.log("Apna College");
+// },4000);
+
+// console.log("Welcome to");
+
+// // Set Interval Function
+
+// let id = setInterval(()=>{
+//     console.log("Divyansh Gupta"); 
+// },2000);
+
+// console.log(id);
+
+// let id2 = setInterval(()=>{
+//     console.log("Hello!");
+// },3000);
+
+// console.log(id2);
+
+// // To stop the setIntervalby call id
+// setTimeout(()=>{
+//     clearInterval(id);
+// },5000);
+
+// this keyword with Arrow Functions
+
+// const student ={
+//     name: "Divyansh",
+//     marks: 95,
+//     prop: this, // Global Scope : Window object
+//     getName: function(){
+//         console.log(this);
+//         return this.name;
+//     },
+//     getMarks: () => {
+//         console.log(this); // Parent's Scope : window
+//         return this.marks;
+//     },
+//     getInfo1: function() {
+//         setTimeout(()=>{
+//             console.log(this); // student Object
+//         },2000);
+//     },
+//     getInfo2 : function(){
+//         setTimeout(function(){
+//             console.log(this); // window object
+//         },2000);
+//     }
+// };
+
+// console.log(student);
+// console.log(student.getName()); // Normal function call 
+//console.log(student.getMarks()); // Arrow function call
+ 
+// student.getInfo1();
+// student.getInfo2();
+
+// Questions
+//q1
+// const square = (n) => (n*n);
+// console.log(square(11));
+
+//q2
+
+// let id = setInterval(()=>{
+//     console.log("Hello World");
+// },2000);
+
+// setTimeout(()=>{
+//     clearInterval(id);
+//     console.log("Clear Interval Ran");
+// },10000);
+
+//  Sheet
+
+//q1
+// const arrayAverage = (arr)=> {
+//     let sum =0;
+//     for(let i=0;i<arr.length;i++)
+//     {
+//         sum+=arr[i];
+//     }
+//     return sum;
+// }
+// console.log(arrayAverage([2,3,4,5]));
+
+// q2
+
+// const isEven = (n) => {
+//     if(n%2==0)
+//     {
+//         return "even";
+//     }
+//     else
+//     {
+//         return "odd";
+//     }
+// }
 
+// console.log(isEven(12));
 
+// q3
 
+const object={
+    message:"Hello,World!",
+    logMessage(){
+        console.log(this.message);
+    }
+};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+setTimeout(object.logMessage,1000);
