@@ -1951,32 +1951,199 @@
 //     {
 //         sum+=arr[i];
 //     }
-//     return sum;
+//     return sum/arr.length;
 // }
 // console.log(arrayAverage([2,3,4,5]));
 
 // q2
 
-// const isEven = (n) => {
-//     if(n%2==0)
-//     {
-//         return "even";
-//     }
-//     else
-//     {
-//         return "odd";
-//     }
-// }
+// const isEven = (num) => num % 2 == 0;
 
 // console.log(isEven(12));
 
 // q3
 
-const object={
-    message:"Hello,World!",
-    logMessage(){
-        console.log(this.message);
-    }
-};
+// let object={
+//     message:"Hello,World!",
+//     logMessage(){
+//         console.log(this.message);
+//     }
+// };
 
-setTimeout(object.logMessage,1000);
+// setTimeout(object.logMessage,1000);
+
+//q4
+
+// let length = 4;
+// function callback()
+// {
+//     console.log(this.length);
+// }
+
+//  object = {
+//     length: 5,
+//     method(callback)
+//     {
+//         callback();
+//     }
+// };
+
+// object.method(callback,1,2);
+
+// JS - 8
+
+// Array Methods 
+
+// forEach
+
+//let arr = [1,2,3,4,5];
+
+// let print = function(el){
+//     console.log(el);
+// }
+// arr.forEach(print);
+
+// alternatively
+
+// arr.forEach((el) => {
+//     console.log(el);  
+// });
+
+// arr.forEach(function(el){
+//     console.log(el);
+// });
+
+//forEach for objects stored in an array
+// let arr = [{
+//     name : "Divyansh",
+//     marks: 95
+// },{
+//     name: "Harshit",
+//     marks: 94
+// },{
+//     name: "Jayesh",
+//     marks: 92
+// }];
+
+// arr.forEach((student)=>{
+//     console.log(student.marks);
+// });
+
+// Map Function
+
+// let num = [1,2,3,4];
+
+// let double =num.map((n)=>{
+//     return n*2;
+// });
+
+// console.log(double);
+
+let students = [{
+    name : "Divyansh",
+    marks: 95
+},{
+    name: "Harshit",
+    marks: 94
+},{
+    name: "Jayesh",
+    marks: 92
+}];
+
+let gpa = students.map((el)=>{
+    return el.marks/10;
+});
+
+console.log(gpa);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
