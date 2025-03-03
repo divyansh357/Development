@@ -2039,111 +2039,213 @@
 
 // console.log(double);
 
-let students = [{
-    name : "Divyansh",
-    marks: 95
-},{
-    name: "Harshit",
-    marks: 94
-},{
-    name: "Jayesh",
-    marks: 92
-}];
+// let students = [{
+//     name : "Divyansh",
+//     marks: 95
+// },{
+//     name: "Harshit",
+//     marks: 94
+// },{
+//     name: "Jayesh",
+//     marks: 92
+// }]; 
+
+// let gpa = students.map((el)=>{
+//     return el.marks/10;
+// });
 
-let gpa = students.map((el)=>{
-    return el.marks/10;
-});
+// console.log(gpa);
 
-console.log(gpa);
+// Filter 
+
+// let arr = [1,2,3,4,5,6,7,8,9,10];
 
+// let newArr = arr.filter((el)=>{
+//     return el%2==0 ; // We can write any condition we have to filter array on
+// });
 
+// console.log(newArr);
 
+// Every Method
 
+// console.log([2,4,6].every((el) => el%2==0));
+// console.log([2,4,1,5].every((el)=> el%2==0));
 
+// Some Method
 
+// console.log([1,2,3,4].some((el)=> el%2==0));
+// console.log([1,3].some((el)=> el%2==0));q
 
+// Reduce Method
 
+// Finding sum
+// let nums = [1,2,3,4];
+// let finalVal = nums.reduce((res,el)=>{
+//     console.log(res);
+//     return res+el;
+// });
+// console.log(finalVal);
 
+// Finding maximum using reduce method 
 
+// let arr = [1,4,5,6,11,22,3];
 
+// let max = arr.reduce((max,el)=>{
+//     if(max<el)
+//     {
+//         return el;
+//     }
+//     else
+//     {
+//         return max;
+//     }
+// });
 
+// console.log(max);
 
+// Practice Questions 
 
+//q1
+// let nums = [10,20,30,40,50];
 
+// let ans = nums.every((el)=>el%10==0);
+// console.log(ans);
 
+//q2
 
+// function getMin(nums)
+// {
+//     let min = nums.reduce((min,el)=>{
+//         if(min<el)
+//         {
+//             return min;
+//         }
+//         else
+//         {
+//             return el;
+//         }
+//     });
+//     return min;
+// }
+// let nums = [102,5,14,3,70,0,45];
 
+// console.log(getMin(nums));
 
+// Default Parameters 
 
+// function sum(a, b=2)
+// {
+//     return a+b;
+// }
+// console.log(sum(1));
+// console.log(sum(4,5));
 
+// function add(a=2,b)
+// {
+//     return a+b;
+// }
 
+// console.log(add(1,5));
+// console.log(add(1)); // a=1, b=undefined
 
+// Spread 
 
+// console.log(Math.min(10,20,0,-1));
 
+// let arr = [10,20,3,45,95,63,4,2,45,78];
+// console.log(...arr);
+// console.log(Math.min(...arr));
+// arr.push(-1);
+// console.log(Math.min(...arr));
+// console.log(Math.max(...arr));
 
+// console.log(..."apnacollege");
 
+// Spread with array literals 
 
+// let arr = [1,2,3,4,5];
+// let newArr = [...arr];
 
+// console.log(newArr);
 
+// newArr.push(6);
+// console.log(newArr);
+// console.log(arr);
 
+// let chars = [..."hello"];
+// console.log(chars);
 
 
+// let odd = [1,3,5,7,9];
+// let even = [2,4,6,8,10];
 
+// let nums = [...even, ...odd]
+// console.log(nums);
 
+// Spread With Object Literals 
 
+// let data = {
+//     email: "dkgupta@gmail.com",
+//     password: "abcd"
+// };
 
+// let dataCopy = {...data, id: 123, country: "India"};
 
+// console.log(data);
+// console.log(dataCopy);
 
+// let arr = [1,2,3,4,6];
+// let obj1 = {...arr}; // passing array in object literal
+// console.log(obj1);
 
+// let obj2 = {..."hello"}; // passing string in object literal
+// console.log(obj2);
 
+// Rest 
 
+// function print(...args)
+// {
+//     for(let i=0;i<args.length;i++)
+//     {
+//         console.log("You gave us:",args[i]);
+//     }
+// }
 
+// print(1,2,4);
 
+// // arguments : is a type of collection of all arguments passed in function 
+// function min()
+// {
+//     console.log(arguments);
+//     console.log(arguments.length);
+// }
 
+// min(1,2,3,4);
 
+// function to calculate sum of arguments
+// function sum(...args)
+// {
+//     return args.reduce((sum,el)=> sum+el);
+// }
 
+// console.log(sum(2,3,6,5,4));
 
+// Tacking other parameters with arguments
+// function min(msg , ...args)
+// {
+//     console.log(msg);
 
+//     return args.reduce((min,el)=>{
+//         if(min>el)
+//         {
+//             return el;
+//         }
+//         else
+//         {
+//             return min;
+//         }
+//     });
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(min("hello",10,25,3,65));
 
