@@ -2249,3 +2249,56 @@
 
 // console.log(min("hello",10,25,3,65));
 
+// Destructuring(Arrays) : Storing values of array into multiple values
+// let names = ["dk","jm","hg","ij"];
+
+// let [winner,runnerup,...others]= names;
+// console.log(winner);
+// console.log(runnerup);
+// console.log(others);
+
+// Destructuring(Objects) : Storing values of objects in multiple values
+
+// const student = {
+//     name : "Divyansh",
+//     age : 20,
+//     subjects : ["Ds","Oopm","Dm"],
+//     username : "Divyansh@123",
+//     password : "Pass",
+//     city : "Dallas"
+// };
+
+// let {username , password} = student;
+// console.log(username);
+// console.log(password);
+
+// Giving different names to variables
+
+// let {username : user, password : secret } = student;
+// console.log(user);
+// console.log(secret);
+
+// Assigning default values to variables 
+
+// let {city: place = "Austin"} = student;
+// console.log(place);
+
+
+// Assignment- Js(8)
+
+//q1
+// let arr = [1,2,3];
+// let square = arr.map((el)=>el*el);
+// let sum = square.reduce((sum,el)=>sum+el);
+// console.log(sum);
+
+//q2
+// let arr = [1,2,3,4,5];
+// let newArr = arr.map((el)=>el+5);
+// console.log(newArr);
+
+//q3
+let lowerCase = ["Divyansh Gupta","Harshit Goud","Jayesh Malviya"];
+let upperCase = lowerCase.map((el)=>{
+    
+});
